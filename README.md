@@ -1,20 +1,23 @@
-Forensic - Beulah
-Description : Bersatu kita teguh, bercerai kita corrupted.
-Kita diberikan sebuah file pcapng, mari kita buka dengan wireshark.
+Forensic - Beulah<br>
+Description : Bersatu kita teguh, bercerai kita corrupted.<br>
+Kita diberikan sebuah file pcapng, mari kita buka dengan wireshark.<br>
 Kita dapat mengekstrak file yang di download melalui http, dengan melakukan File > Export Objects > HTTP
 <br><br>
 <p align="center">
 <img src="https://github.com/laBigby/cscctf-foren/blob/master/101.JPG">
+</p>
 <br><br>
 Terdapat content-type application/force-download dari www.yourfilelink.com, mari kita save file yang bernama direct.php tersebut.
 <br><br>
 <p align="center">
 <img src="https://github.com/laBigby/cscctf-foren/blob/master/102.JPG">
+</p>
 <br><br>
 Setelah dilihat ternyata file tersebut merupakan zip, mari di unzip
 <br><br>
 <p align="center">
 <img src="https://github.com/laBigby/cscctf-foren/blob/master/103.JPG">
+</p>
 <br><br>
 Didapatkan 7 file yang berisi base64, yang harus disatukan menjadi 1 file utuh dengan urutan yang benar pula untuk mendapatkan flag.
 Penulis menyediakan pula hash agar saat proses permutasi file, bisa dibedakan mana file utuh yang benar dan mana file sampah yang corrupt sehingga tidak terlalu mengotori directory peserta
@@ -54,5 +57,6 @@ Kita mendapatkan flag !
 <br><br>
 <p align="center">
 <img src="https://github.com/laBigby/cscctf-foren/blob/master/104.jpg">
+</p>
 <br><br>
 Flag : CCC{its_pcap_m491c_h3h3}
