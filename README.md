@@ -53,6 +53,6 @@ for i in bruh:<br>
 Kita mendapatkan flag !
 <br><br>
 <p align="center">
-<img src="https://github.com/laBigby/cscctf-foren/blob/master/104.JPG">
+<img src="https://github.com/laBigby/cscctf-foren/blob/master/104.jpg">
 <br><br>
 Flag : CCC{its_pcap_m491c_h3h3}
