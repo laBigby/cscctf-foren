@@ -2,24 +2,24 @@ Forensic - Beulah
 Description : Bersatu kita teguh, bercerai kita corrupted.
 Kita diberikan sebuah file pcapng, mari kita buka dengan wireshark.
 Kita dapat mengekstrak file yang di download melalui http, dengan melakukan File > Export Objects > HTTP
-<br>
+<br><br>
 ![export](ss/beulah/101.jpg)
-<br>
+<br><br>
 Terdapat content-type application/force-download dari www.yourfilelink.com, mari kita save file yang bernama direct.php tersebut.
-<br>
+<br><br>
 ![file](ss/beulah/102.jpg)
-<br>
+<br><br>
 Setelah dilihat ternyata file tersebut merupakan zip, mari di unzip
-<br>
+<br><br>
 ![file](ss/beulah/103.jpg)
-<br>
+<br><br>
 Didapatkan 7 file yang berisi base64, yang harus disatukan menjadi 1 file utuh dengan urutan yang benar pula untuk mendapatkan flag.
 Penulis menyediakan pula hash agar saat proses permutasi file, bisa dibedakan mana file utuh yang benar dan mana file sampah yang corrupt sehingga tidak terlalu mengotori directory peserta
-<br>
+<br><br>
 Hash yang diberikan 53453310bf3752492eb41cc0f4a948ad
-<br>
+<br><br>
 Mari kita selesaikan dengan scripting
-<br>
+<br><br>
 from itertools import permutations<br>
 import os<br>
 import hashlib<br>
@@ -46,9 +46,9 @@ for i in bruh:<br>
 	else:<br>
 		break<br>
 	j+=1<br>
-<br>
+<br><br>
 Kita mendapatkan flag !
-<br>
+<br><br>
 ![file](ss/beulah/104.jpg)
-<br>
+<br><br>
 Flag : CCC{its_pcap_m491c_h3h3}
